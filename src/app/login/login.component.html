@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeDIY Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #ffe5e500;
+            color: #e1e0e0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Login Container */
+        .login-container {
+            margin-top: 0px; /* Move the form down a bit */
+            padding: 10px;
+            color: #000000;
+            background: rgba(120, 117, 117, 0.8); /* Semi-transparent background */
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            width: 400px;
+            height: 400px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ebebeb;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .col-form-label {
+            flex: 0 0 auto;
+            width: 20%;
+            max-width: 20%;
+            padding-right: 10px;
+            text-align: right;
+            color: #000000;
+        }
+
+        .col-sm-10 {
+            flex: 1;
+            max-width: 80%;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: #1b1414;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="mx-auto login-container">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+            <fieldset>
+                <legend>Login</legend>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" required name="email" [ngModel]="user.email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" required name="password" [ngModel]="user.password" class="form-control" id="inputPassword3">
+                    </div>
+                </div>
+                <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary">Log in</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
