@@ -29,7 +29,7 @@ HomeDYI is a single-page web application where homeowners and other do-it-yourse
 To get a local copy up and running follow these simple steps:
 
 1. Clone the repository:
-git clone https://github.com/yourusername/HomeDYI.git
+git clone https://github.com/bistrobk/HomeOwnersAngularApp-main
 cd HomeDYI
 
 markdown
