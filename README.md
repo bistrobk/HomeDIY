@@ -1,62 +1,141 @@
-# AskMe Angular Site
-
-   This is a single-page web application where users and curious minds can post questions and get expert advice about problems they might be having.
-   Features
-
-    1.User Registration: Users can create an account to gain access to the features of the application.
-    2.User Login: Registered users can log in to their accounts to access their personalized content.
-    3.Post Questions: Users can post questions related to various topics or issues they are facing.
-    4.View Questions: Users can browse and view questions posted by other users.
-    5.Answer Questions: Experts and knowledgeable users can provide answers and advice to posted questions.
-    6.Commenting: Users can leave comments on questions or answers to engage in discussions.
-    7.Search Functionality: Users can search for specific questions or topics using the search feature.
-   
-
-## Technologies Used
-
-    1.Front-end Framework: Angular
-    2.Back-end Framework: Node.js
-    3.Database: MongoDB
-    4.CSS Framework: Bootstrap
-   
-
-## Getting Started
-### Prerequisites
-
-    Node.js and npm installed on your machine.
-    MongoDB database set up.
-
-### Installation and Setup
-
-    Clone the repository
-
-    Install the dependencies: run npm install
-
-    Start the development server: ng serve / npm start
-    
-    Open your browser and access the application at http://localhost:4200.
- 
-### Users access
-    Admin
-    email: a@a.com
-    password: admin
-    
-    Expert
-    email: j@j.com
-    password: root
-    
-    test user
-    email: t@t.com
-    password: test
-
-### Contribution
-    A big thank you to @Lou-John for joining me in developing this application!
-
- ![Screenshot 2023-05-15 162946](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/a0fcd474-c1a7-4189-b02e-2c2cb5dc95bd)
-![Screenshot 2023-05-15 163353](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/36de8162-ca89-4015-b1dc-ef31e7223d99)
-![Screenshot 2023-05-15 163435](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/8cf3799d-ea14-471a-9d53-9439bd5b8907)
-![Screenshot 2023-05-15 163458](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/15850d08-4527-4d92-bc0e-d70e575ccf74)
-![Screenshot 2023-05-15 163519](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/6b116ad5-04c3-40a8-b746-958932aedd6f)
-![Screenshot 2023-05-15 163854](https://github.com/ApexPlayground/HomeOwnersAngularApp/assets/115173705/7535bc06-490c-4566-9daa-e5e63de88961)
 
 
+# HomeDYI - DIY Home Improvement Web Application
+
+HomeDYI is a single-page web application where homeowners and other do-it-yourselfers can post questions and get expert advice about problems they might be having. The application allows users to register, log in, post questions, answer questions, and upvote the best answers.
+
+## Table of Contents
+
+- Features
+- Installation
+- Usage
+- Technologies
+- Project Structure
+- Contributing
+- License
+
+## Features
+
+- User registration and login
+- Post questions
+- Answer questions
+- Upvote and downvote answers
+- Search for questions
+- Filter and manage questions and answers
+- Admin functionality for managing content
+
+## Installation
+
+To get a local copy up and running follow these simple steps:
+
+1. Clone the repository:
+git clone https://github.com/yourusername/HomeDYI.git
+cd HomeDYI
+
+markdown
+Copy code
+
+2. Install dependencies:
+npm install
+
+markdown
+Copy code
+
+3. Run the application:
+ng serve
+
+markdown
+Copy code
+
+Open your browser and navigate to `http://localhost:4200`.
+
+## Usage
+
+- Register: Create a new account.
+- Login: Log in with your credentials.
+- Post a Question: Navigate to the questions page and post a new question.
+- Answer a Question: Click on a question to view details and post your answer.
+- Upvote/Downvote: Upvote or downvote answers based on their usefulness.
+- Search: Use the search bar to find specific questions.
+- Admin: Admin users can edit and delete any question or answer.
+
+## Technologies
+
+- Frontend:
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap
+
+- Backend:
+- Node.js
+- Express.js (not shown but typically used for API)
+
+- Database:
+- MongoDB (not shown but typically used for data storage)
+
+## Project Structure
+
+HomeDYI/
+│
+├── src/
+│ ├── app/
+│ │ ├── answers/
+│ │ │ ├── answers.component.html
+│ │ │ ├── answers.component.css
+│ │ │ ├── answers.component.ts
+│ │ ├── auth.service.ts
+│ │ ├── comments/
+│ │ │ ├── comments.component.html
+│ │ │ ├── comments.component.css
+│ │ │ ├── comments.component.ts
+│ │ ├── data.service.ts
+│ │ ├── login/
+│ │ │ ├── login.component.html
+│ │ │ ├── login.component.css
+│ │ │ ├── login.component.ts
+│ │ ├── questions/
+│ │ │ ├── questions.component.html
+│ │ │ ├── questions.component.css
+│ │ │ ├── questions.component.ts
+│ │ ├── register/
+│ │ │ ├── register.component.html
+│ │ │ ├── register.component.css
+│ │ │ ├── register.component.ts
+│ │ ├── app.component.html
+│ │ ├── app.component.css
+│ │ ├── app.component.ts
+│ │ ├── app-routing.module.ts
+│ │ ├── app.module.ts
+│ ├── assets/
+│ │ ├── images/
+│ │ │ ├── favicon.jpg
+│ ├── environments/
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── main.ts
+│ ├── styles.css
+│ ├── ...
+│
+├── angular.json
+├── package.json
+├── README.md
+└── ...
+
+markdown
+Copy code
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
